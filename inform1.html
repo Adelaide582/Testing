@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.Accord {
+            width: 100%;
+            height: 50px;
+            border: 1px solid black;
+            font-size: 30px;
+            background-color: black;
+            transition: 2s;
+            outline: none;
+            /* overflow: hidden; */
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .Accord1 {
+            width: 100%;
+            height: 50px;
+            border: 1px solid black;
+            font-size: 30px;
+            background-color: black;
+            transition: 2s;
+            outline: none;
+            /* overflow: hidden; */
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-top: -40px;
+        }
+
+        .Accord:hover {
+            background-color: silver;
+        }
+
+        .Accord1:hover {
+            background-color: silver;
+        }
+
+        .text {
+            font-size: 30px;
+            width: 100%;
+            height: 100px;
+            background-color: grey;
+            top: 0;
+            bottom: 0;
+            margin-top: -0px;
+            overflow: hidden;
+        }
+
+        .text1 {
+            font-size: 30px;
+            width: 100%;
+            height: 100px;
+            background-color: grey;
+            top: 0;
+            bottom: 0;
+            margin-top: -0px;
+            overflow: hidden;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="Accord" id="A" onclick="Accordian()" ondblclick="Accordionm()">Description</div>
+    <p class="text1" id="word" >jump</p>
+</div>
+<div>
+    <div class="Accord1" id="B" onclick="Accordian1()" ondblclick="AccordianO()">Chapter list</div>
+    <p class="text" id="word1">laugh</p>
+</div>
+
+<script>
+
+    // if(document.getElementById('word').style.display="none") {
+    //     document.getElementById('word').style.marginTop = "10px"
+    // }
+    // else {
+    //     document.getElementById('word').style.marginTop = "-40px"
+    // }
+
+    // let panel = document.getElementById('word')
+
+    function Accordian() {
+    //     if (panel.style.display === "block") {
+    //   panel.style.display = "none";
+    // } else {
+    //   panel.style.display = "block";
+    // }
+        // document.getElementById('word').style.display="none"
+         document.getElementById('word').style.height="0px"
+        document.getElementById('word').style.transition="2s"
+        document.getElementById('word').style.marginBottom="40px"
+    }
+
+    function Accordionm() {
+        document.getElementById('word').style.marginBottom="40px"
+        document.getElementById('word').style.height="100px"
+        document.getElementById('word').style.transition="2s"
+    }
+
+    // if (panel.style.display === "block") {
+    //   panel.style.display = "none";
+    // } else {
+    //   panel.style.display = "block";
+    // }
+
+    function Accordian1() {
+    //     if (panel.style.display === "block") {
+    //   panel.style.display = "none";
+    // } else {
+    //   panel.style.display = "block";
+    // }
+        // document.getElementById('word1').style.display="none"
+        document.getElementById('word1').style.marginBottom="40px"
+        document.getElementById('word1').style.height="0"
+        document.getElementById('word1').style.transition="2s"
+    }
+
+    function AccordianO() {
+    //     if (panel.style.display === "block") {
+    //   panel.style.display = "none";
+    // } else {
+    //   panel.style.display = "block";
+    // }
+        // document.getElementById('word1').style.display="none"
+        document.getElementById('word1').style.marginBottom="40px"
+        document.getElementById('word1').style.height="100px"
+        document.getElementById('word1').style.transition="2s"
+    }
+</script>
+</body>
+</html>

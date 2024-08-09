@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-color: palegoldenrod;
+        }
+
+        .head {
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 50px;
+        }
+
+     .base {
+            width: 100%;
+            height:  50px;
+            border: 1px solid black;
+            margin-top:16%;
+            background-color: rgb(70, 69, 69);
+                /* height: 20%; */
+                padding-top: 50px;
+                padding-bottom: 50px;
+      }
+
+      [class*="cancel"] {
+        width: 100px;
+        height: 100px; 
+        border: 1px solid black;
+        margin-top:-100px;
+        margin-left: 90%;
+        background-color: brown;
+        border-radius: 5%;
+        color: white;
+        text-align: center center;
+        display: flex;
+        justify-content: center;
+        font-size: 8cap;
+        align-items: end;
+        
+      }
+
+      .cancel:hover {
+        background-color: rgb(134, 34, 34);
+      }
+
+      @media only screen and (max-width: 765px) {
+  /* For mobile phones: */
+  [class*="cancel"] {
+    margin-left:80%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  /* For mobile phones: */
+  [class*="cancel"] {
+    margin-left:70%;
+  }
+}
+
+    .w3-xxxlarge {
+        width: 200px;
+        height: 100px; 
+        border: 1px solid black;
+        margin-top:-20px;
+        margin-left: 5%;
+        background-color: royalblue;
+        border-radius: 5%;
+        color: white;
+        text-align: center center;
+        display: flex;
+        justify-content: center;
+        font-size: 5cap;
+        align-items: end;
+}
+
+    .w3-xxxlarge:hover {
+        background-color: rgb(32, 55, 124);
+    }
+
+    [class*="t-button"] {
+        width: 160px;
+        height: 70px; 
+        border: 1px solid black;
+        margin-top:20px;
+        margin-left: 5%;
+        background-color: rgb(243, 233, 89);
+        border-radius: 50%; 
+        color: white;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-content: center;
+        align-self: center;
+        align-items: center;
+        margin-left: 44%;
+}
+
+.t-button:hover {
+    background-color: rgb(179, 171, 63);
+}
+
+.text {
+    font-size: 20px;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 765px) {
+  /* For mobile phones: */
+  [class*="t-button"] {
+    margin-left:33%;
+  }
+}
+    </style>
+</head>
+<body>
+    <h1 class="head">Learn Hub</h1>
+    <p style="text-align: center; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">By: Carly10o04</p>
+    <div onclick="typeWriter()" class="t-button">Click to see more</div>
+    <p id="demo" class="text"></p>
+    
+    <script>
+    var i = 0;
+    var txt = 'You get unlimited experience and enlightment on Learn Hub where we make education easier for your kids, Note: this site education is for (Year n 9-11) Senior Years, to help make their learning experience easier. Down below shows Different subject you can sign your children up for with quizes to track their progress';
+    var speed = 50;
+    
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+    </script>
+
+    <div class="base" id="menu">
+        <div class="w3-xxxlarge"><i class="fa fa-home"></i> Home</div>
+        <div class="cancel" onclick="document.getElementById('menu').style.display='none'">x</div>
+    </div>
+</body>
+</html>

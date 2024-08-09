@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .Wrapper {
+            width: 0;
+            height: 98vh;
+            border: 1px solid rgb(90, 89, 89);
+            transition: 1s;
+            position: fixed;
+            top: 0;
+            background-color: rgb(32, 32, 32);
+            left: 0;
+            overflow-x: hidden;
+            padding-bottom: 11px;
+            bottom: 0;
+            
+        }
+/* 
+        .nav-op:hover {
+            width:0;
+            height:0;
+        } */
+
+        /* .box {
+            width: 50px;
+            height: 100%;
+            border: 1px solid rgb(90, 89, 89); 
+            padding-top: 50px;
+        } */
+
+        .body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .op {
+            font-size: 25px;
+            font-weight: 300;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(196, 196, 196);
+            /* padding-top: 60px; */
+            margin-right: 60px;
+            margin-left: 20px;
+            
+        }
+
+        .op:hover {
+            color: white;
+        }
+
+        .cancel {
+            font-weight: bolder;
+            font-size: 40px;
+            color: rgb(196, 196, 196);
+            margin-left: 200px;
+        }
+
+        .cancel:hover {
+            color: white;
+        }
+
+        [class*="burger"] {
+            font-weight: bolder;
+            font-size: 35px;
+            color: rgb(196, 196, 196);
+            margin-left: 95%;
+        }
+
+        .burger:hover {
+            color: rgb(172, 170, 170);
+        }
+
+        @media only screen and (max-width: 765px) {
+         [class*="burger"] {
+            margin-left: 90%;
+         }   
+        }
+
+        .content {
+                width: 95%;
+                height: 20%;
+                font-size: 18px;
+                font-family: Arial, Helvetica, sans-serif;
+                border: 1px solid rgb(151, 151, 151);
+                border-radius: 5px;
+                background-color: rgb(202, 202, 202);
+                padding: 15px;
+            }
+
+            .header {
+                width: 80px;
+                height: 10px;
+                border: 1px solid rgb(151, 151, 151);
+                background-color: rgb(85, 78, 111);
+                border-top:  10%;
+                padding: 10px;
+                text-align: center;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+                padding-top: 10px;
+            }
+
+            [class*="container"] {
+                margin-top: 500px;
+            }
+
+            @media only screen and (max-width:765px){
+                [class*="container"] {
+                    margin-top: 340px;
+                }
+            }
+            
+            body {
+                background-image: url(anime-girl-alone-qw9jqd5s60zbq77v.jpg);
+                background-position: center center;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-color: grey;
+            }
+
+            .Voice{
+                width: 200px;
+                height: 50px;
+                border: 1px solid black;
+            }
+
+            .burger {
+                font-size:30px;
+                cursor:pointer;
+                 margin-left: 95%; 
+                 color:rgb(221, 215, 215);
+            }
+
+            .burger:hover {
+                color: white;
+            }
+    </style>
+
+    <script>
+        function openNav() {
+            document.getElementById('nav').style.width="250px"
+            document.getElementById('main').style.marginLeft="250px"
+            // document.getElementsByClassName('op').style.display="block"
+        }
+
+        function closeNav() {
+            document.getElementById('nav').style.width="0"
+            document.getElementById('main').style.marginLeft="0"
+        //    document.getElementsByClassName('op').style.display="none"
+        }
+
+    </script>
+</head>
+<body>
+    <div class="Wrapper" id="nav">
+        <div onclick="closeNav()" style="margin-right: 60px;" class="cancel">&times;</div>
+        <a class="op">Home</a>
+        <a class="op">Services</a>
+        <a class="op">Contact</a>
+        <a class="op">About</a>
+    </div>
+   
+    <div onclick="openNav()" class="burger">&#9776;</div>
+
+    <div  class="Main">
+
+    <div class="container">
+        <div class="header" id="head">
+            Narator
+        </div>
+        <div id="demo" style="display: none;" class="content">
+            <p>The girl sighed as she closed her notebook, feeling a bit frustrated with the lack of inspiration. Her balcony offered a peaceful view of the sky, but it seemed that the creative spark she needed wasn't present in the moment. As she stood up, her stomach growled loudly, a reminder that she had neglected her own needs.</p>
+    
+     <p>Deciding to take a break from her writing, she headed to the kitchen only to find nothing. With a resigned look, she realized it was time to go out for some groceries. Grabbing her keys and slipping on a light jacket, she left her apartment in search of nourishment.</p>
+        </div>
+    
+        <iframe src="Voice1 - Made with Clipchamp.mp4" class="Voice"></iframe>
+    
+        <button type="button" onclick="document.getElementById('demo').style.display='block'" ondblclick="document.getElementById('demo').style.display='none'">display text</button>
+    
+        <a href="chapter1.1.html">
+        <button href="chapter1.1.html">Next</button>    
+        </a>
+
+    </div>
+</body>
+</html>
